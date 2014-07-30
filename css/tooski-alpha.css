@@ -1,0 +1,225 @@
+@import "/tooski/assets/css/bootstrap.css";
+/*Here are the variables for the whole design*/
+/*Here are the less functions*/
+/*Here you have the Bootstrap CSS, you can find more info about that here: http://twitter.github.com/bootstrap/ */
+/*That's the end of bootstrap*/
+body {
+  text-align: center;
+  color: #2cabec;
+  background-image: url('/tooski/assets/images/background.jpg');
+}
+p {
+  text-align: justify;
+}
+a {
+  color: #2cabec;
+}
+a:hover {
+  color: #ec6d2c;
+}
+a:visited {
+  color: #05b015;
+}
+#header {
+  display: none;
+}
+#menu {
+  display: inline-block;
+  margin: 15px;
+}
+#page {
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #000000;
+  -moz-box-shadow: 0px 0px 4px #000000;
+  box-shadow: 0px 0px 4px #000000;
+  display: inline-block;
+  width: 1000px;
+  min-height: 900px;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+}
+#footer {
+  color: #ffffff;
+  width: 1000px;
+  display: inline-block;
+  border: solid #000000 1px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  box-shadow: 0px 0px 5px #000000;
+}
+#footer p {
+  text-align: center;
+}
+#topBar {
+  color: #ffffff;
+  border: solid #000000 1px;
+  height: 180px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+#classement {
+  padding: 3px;
+  margin: 1px;
+}
+#classement td {
+  margin: 0px;
+  padding: 0px;
+}
+#classement tr {
+  margin: 0px;
+  padding: 2px;
+}
+#sponsor {
+  display: inline-block;
+  margin-top: 25px;
+}
+#rechercher {
+  float: right;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+#rechercher input {
+  margin-top: 20px;
+}
+#rechercher h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #ffffff;
+}
+#bottomBar {
+  margin-top: 35px;
+  height: 60px;
+  border: solid black 2px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-top-right-radius: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-topright: 30px;
+  -moz-border-radius-bottomright: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+  -moz-box-shadow: 0px 0px 10px #000000;
+  box-shadow: 0px 0px 10px #000000;
+}
+#bottomBarContent {
+  padding-left: 10px;
+}
+.menuTitle {
+  height: 40px;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bolder;
+  display: inline-block;
+}
+.menuTitle:hover {
+  background-color: #c0deed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c0deed), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -moz-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -ms-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -o-linear-gradient(top, #c0deed, #2cabec);
+  background-image: linear-gradient(to bottom, #c0deed, #2cabec);
+  -webkit-box-shadow: 0px 0px 5px #ec6d2c;
+  -moz-box-shadow: 0px 0px 5px #ec6d2c;
+  box-shadow: 0px 0px 5px #ec6d2c;
+  color: #ec6d2c;
+  cursor: pointer;
+}
+.menuContent {
+  display: none;
+  border-top: none;
+  border: solid black 1px;
+  text-align: left;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.menuContent li {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 5px;
+}
+.menuContent li:hover {
+  color: #ec6d2c;
+}

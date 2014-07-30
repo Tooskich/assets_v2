@@ -1,0 +1,605 @@
+@import "/tooski/assets/css/bootstrap.css";
+body {
+  text-align: center;
+  color: #2cabec;
+  background-image: url('/assets/images/background.jpg');
+}
+p {
+  text-align: justify;
+}
+a {
+  color: #2cabec;
+}
+a:hover {
+  color: #ec6d2c;
+}
+a:visited {
+  color: #ec6d2c;
+}
+/*div{
+  display:inline-block;
+}*/
+#header {
+  display: none;
+}
+#menu {
+  display: inline-block;
+  margin: 15px;
+}
+#page {
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #000000;
+  -moz-box-shadow: 0px 0px 4px #000000;
+  box-shadow: 0px 0px 4px #000000;
+  display: inline-block;
+  width: 1000px;
+  min-height: 900px;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+#footer {
+  color: #ffffff;
+  width: 1000px;
+  display: inline-block;
+  border: solid #000000 1px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  box-shadow: 0px 0px 5px #000000;
+}
+#footer p {
+  text-align: center;
+}
+#topBar {
+  display: block;
+  color: #ffffff;
+  border: solid #000000 1px;
+  height: 180px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+#classement {
+  padding: 3px;
+  margin: 1px;
+}
+#classement td {
+  margin: 0px;
+  padding: 0px;
+}
+#classement tr {
+  margin: 0px;
+  padding: 2px;
+}
+#sponsor {
+  display: inline-block;
+  margin-top: 25px;
+}
+#rechercher {
+  float: right;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+#rechercher input {
+  margin-top: 20px;
+}
+#rechercher h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #ffffff;
+}
+#bottomBar {
+  margin-top: 35px;
+  height: 60px;
+  border: solid black 2px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-top-right-radius: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-topright: 30px;
+  -moz-border-radius-bottomright: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+  -moz-box-shadow: 0px 0px 10px #000000;
+  box-shadow: 0px 0px 10px #000000;
+}
+#bottomBarContent {
+  padding-left: 10px;
+}
+#listOfNews {
+  width: 550px;
+}
+.menuTitle {
+  height: 40px;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bolder;
+  display: inline-block;
+}
+.menuTitle:hover {
+  background-color: #c0deed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c0deed), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -moz-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -ms-linear-gradient(top, #c0deed, #2cabec);
+  background-image: -o-linear-gradient(top, #c0deed, #2cabec);
+  background-image: linear-gradient(to bottom, #c0deed, #2cabec);
+  -webkit-box-shadow: 0px 0px 5px #ec6d2c;
+  -moz-box-shadow: 0px 0px 5px #ec6d2c;
+  box-shadow: 0px 0px 5px #ec6d2c;
+  color: #ec6d2c;
+  cursor: pointer;
+}
+.menuContent {
+  display: none;
+  border-top: none;
+  border: solid black 1px;
+  text-align: left;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  box-shadow: 0px 0px 5px #000000;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.menuContent li {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 5px;
+}
+.menuContent li:hover {
+  color: #ec6d2c;
+}
+.clickable {
+  cursor: pointer;
+}
+.newsTable {
+  width: 525px;
+  border: solid black 1px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+  -moz-box-shadow: 0px 0px 3px #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+.newsTable td {
+  border: inherit !important;
+}
+.newsImage {
+  width: auto;
+}
+.newsTitle {
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+.newsShowOptions {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-left: solid #000000 1px;
+  padding: 5px;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  height: 100%;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  /* Saf4+, Chrome */
+
+  background-image: -webkit-linear-gradient(left, #2cabec, #c0deed);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+
+  background-image: -moz-linear-gradient(left, #2cabec, #c0deed);
+  /* FF3.6 */
+
+  background-image: -ms-linear-gradient(left, #2cabec, #c0deed);
+  /* IE10 */
+
+  background-image: -o-linear-gradient(left, #2cabec, #c0deed);
+  /* Opera 11.10+ */
+
+  background-image: linear-gradient(left, #2cabec, #c0deed);
+}
+.newsOptionsContent {
+  display: none;
+}
+.newsContent {
+  height: auto;
+}
+.newsFullText {
+  display: none;
+}
+.newsFullText .resultTable {
+  font-size: 11px;
+  width: 450px;
+}
+.resultTable {
+  width: 700px;
+  color: #ffffff;
+  padding: 1px;
+  background-color: #1181bb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1181bb), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -moz-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -ms-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -o-linear-gradient(top, #1181bb, #2cabec);
+  background-image: linear-gradient(to bottom, #1181bb, #2cabec);
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  box-shadow: 0px 0px 5px #000000;
+}
+.resultTable table, .resultTable td, .resultTable tr {
+  padding: inherit !important;
+}
+.newsShowMore {
+  display: table-cell;
+  padding: 3px;
+  border-top: solid #000000 1px;
+  height: 0px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+}
+.newsShowMore p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 23px;
+}
+.newsDiv {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.newsDivImage {
+  border: solid #000000 1px;
+  width: 525px;
+  margin: 15px;
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  box-shadow: 0px 0px 5px #000000;
+}
+.newsDivImage h1 {
+  color: #2cabec;
+}
+.widgetAllNews {
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: right;
+  width: 400px;
+  height: 500px;
+  overflow-y: scroll;
+  color: #ffffff;
+  border: solid #000000 1px;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #1181bb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1181bb), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -moz-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -ms-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -o-linear-gradient(top, #1181bb, #2cabec);
+  background-image: linear-gradient(to bottom, #1181bb, #2cabec);
+}
+.widgetAllNews h3 {
+  color: #ffffff;
+}
+.widgetAllNews a {
+  color: white;
+}
+.commentNewsTitle {
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35pt;
+  color: #2cabec;
+  text-shadow: 1px 1px 3px #000000;
+}
+.commentNewsText {
+  width: 700px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 50px;
+  text-align: justify;
+}
+.commentSignature {
+  width: 700px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+.commentShare {
+  border: inherit !important;
+  width: 700px;
+  height: 150px;
+}
+.commentTable {
+  width: 700px;
+}
+.commentTable tr {
+  border: inherit !important;
+}
+.commentAllComments {
+  width: 700px;
+  border: solid #000000 1px;
+  color: white;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+}
+.commentAllComments h2 {
+  color: white;
+}
+.commentInfo {
+  margin: 10px;
+  padding: 10px;
+  border-top: solid #ec6d2c 1px;
+  background-color: #1181bb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1181bb), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -moz-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -ms-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -o-linear-gradient(top, #1181bb, #2cabec);
+  background-image: linear-gradient(to bottom, #1181bb, #2cabec);
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.commentInfoPseudo {
+  border-right: solid #ec6d2c 1px;
+}
+.commentInfoText {
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+}
+.divNewInscriptions {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border: solid #000000 1px;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2cabec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cabec), to(#c0deed));
+  background-image: -webkit-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -moz-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -ms-linear-gradient(top, #2cabec, #c0deed);
+  background-image: -o-linear-gradient(top, #2cabec, #c0deed);
+  background-image: linear-gradient(to bottom, #2cabec, #c0deed);
+}
+.divNewInscriptions h3 {
+  color: #ffffff;
+}
+.newInscriptions {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: solid #ec6d2c 1px;
+  background-color: #1181bb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1181bb), to(#2cabec));
+  background-image: -webkit-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -moz-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -ms-linear-gradient(top, #1181bb, #2cabec);
+  background-image: -o-linear-gradient(top, #1181bb, #2cabec);
+  background-image: linear-gradient(to bottom, #1181bb, #2cabec);
+}
+.inscriptionsInfos {
+  padding: 10px;
+  text-align: justify;
+}
+.adminButtonsTable {
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+.adminTableNews {
+  text-align: center;
+}
+.divLogin {
+  display: inline-block;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+  margin: 25px;
+  border: solid #2cabec 1px;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px #2cabec;
+  -moz-box-shadow: 0px 0px 5px #2cabec;
+  box-shadow: 0px 0px 5px #2cabec;
+}
+.divLogin tr, .divLogin td {
+  border: inherit !important;
+}
+.divLogin div {
+  margin: 10px;
+}
+.tableGeneral {
+  display: none;
+}
